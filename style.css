@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  transition: all 2s;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div:hover {
+  background-color: aquamarine;
+  transform: rotatex(80deg);
+}
