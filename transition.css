@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#div1 {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  transition: all 2s;
+}
+
+#div1:hover {
+  height: 200px;
+  width: 150px;
+  background-color: yellow;
+  padding: 15px;
+}
+
+input {
+  width: 0px;
+  transition: width 2s;
+}
+
+input:focus {
+  width: 200px;
+}
+
+h1 {
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: 2;
+}
+
+#div2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  /* animation-name: um_efeito;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-delay: 2s; */
+  animation: um_efeito 2s linear 3s infinite alternate;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes um_efeito {
+  0% {
+    width: 100px;
+  }
+  25% {
+    width: 300px;
+  }
+  50% {
+    width: 200px;
+    background-color: red;
+  }
+  75% {
+    width: 300px;
+  }
+  100% {
+    width: 100px;
+    background-color: green;
+  }
+}

@@ -4,10 +4,12 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 div {
@@ -19,7 +21,67 @@ div {
   align-items: center;
 }
 
-div:hover {
+#div1 {
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(to top, red, yellow);
+}
+
+#div2 {
+  height: 100px;
+  width: 100px;
+  background-image: radial-gradient(red, yellow);
+}
+#div3 {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+}
+
+#div3:hover {
+  transform: translate(20px, 20px);
+  /* transform: translatex(20px) translatey(20px); */
+}
+
+#div4 {
+  height: 100px;
+  width: 100px;
+  background-color: blueviolet;
+}
+
+#div4:hover {
+  /* transform: rotate(60deg); */
+  /* transform: rotatex(60deg); */
+  /* transform: rotatey(180deg); */
+  transform: rotatez(-60deg);
+}
+
+#div5 {
+  height: 100px;
+  width: 100px;
+  background-color: greenyellow;
+}
+
+#div5:hover {
+  /* transform: scale(2, 1); */
+  /* transform: scaleX(2); */
+  /* transform: scaley(2); */
+  transform: scalex(2) scaley(2);
+}
+
+#div5 {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+#div5:hover {
+  /* transform: skew(20deg, 5deg); */
+  transform: skewx(20deg);
+  /* transform: skewy(20deg); */
+}
+
+#div10:hover {
   background-color: aquamarine;
-  transform: rotatex(80deg);
+  transform: scale(2, 1.5) rotate(60deg) skew(30deg, 20deg);
 }
